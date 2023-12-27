@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(207, 196, 219);
+}
+
+.logo {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 33px;
+  font-weight: 700;
+  color: rgb(48, 30, 57);
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+
+.searchBar {
+  display: flex;
+  justify-content: center;
+  margin-top: 14px;
+}
+
+.searchBar input {
+  width: 300px;
+  height: 12px;
+  padding: 11px;
+  outline: none;
+  border-radius: 33px;
+  border: 1px solid rgb(126, 91, 145);
+  font-size: 18px;
+}
+
+.searchBar button {
+  width: 60px;
+  height: 36px;
+  border-top-right-radius: 22px;
+  border-bottom-right-radius: 22px;
+  margin-left: -33px;
+  border: none;
+  font-size: 18px;
+  color: rgb(249, 203, 236);
+  background-color: rgb(111, 76, 130);
+  cursor: pointer;
+}
+
+.searchBar button:hover {
+  color: rgb(249, 203, 236);
+  background-color: rgb(111, 76, 130);
+}
+
+.category {
+  width: 600px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 33px;
+}
+
+.category .dishes {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: auto;
+  transition: all 1s ease;
+  z-index: 0;
+}
+
+.dishes input {
+  width: 100px;
+  height: 34px;
+  cursor: pointer;
+  color: rgb(249, 203, 236);
+  background-color: rgb(111, 76, 130);
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-radius: 22px;
+}
+
+.dishes input:hover {
+  color: rgb(111, 76, 130);
+  background-color: rgb(249, 203, 236);
+}
+
+.category button {
+  position: relative;
+  top: 44px;
+  background-color: transparent;
+  font-size: 27px;
+  border: none;
+  cursor: pointer;
+}
+
+#prevBtn {
+  padding: 11px;
+  z-index: 1;
+}
+
+#nextBtn {
+  margin-left: 88%;
+}
+
+.showMeal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.showMeal .card {
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
+  text-align: center;
+  margin-inline: 20px;
+  margin-top: 22px;
+  box-shadow: 1px 3px 3px 3px rgb(209, 209, 209);
+  border-radius: 12px;
+  margin-bottom: 22px;
+}
+
+.card img {
+  width: 100%;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+}
+
+.card button {
+  width: 90px;
+  height: 30px;
+  background-color: rgb(111, 76, 130);
+  color: rgb(249, 203, 236);
+  margin-top: 26px;
+  border: none;
+  font-size: 15px;
+  border-radius: 4px;
+}
+
+.card button a {
+  text-decoration: none;
+  color: rgb(249, 203, 236);
+}
+
+@media screen and (max-width: 640px) {
+  .category {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .category input {
+    width: 75px;
+  }
+  .searchBar input {
+    width: 60%;
+  }
+  #prevBtn {
+    padding: 11px;
+    z-index: 1;
+    margin-left: 2%;
+  }
+
+  #nextBtn {
+    margin-left: 78%;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .category input {
+    width: 60px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  #nextBtn {
+    left: -4%;
+  }
+}
